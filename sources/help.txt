@@ -1,0 +1,13 @@
+command format:
+react-artisan COMMAND FILENAME [OPTIONS]
+
+e.g:
+react-artisan create:component About --with-react-redux --functional
+
+options:
+--with-react-redux
+--functional / -f
+--folder-file / -ff
+--here
+
+more info see at Github: https://github.com/ryanarmial/react-artisan
