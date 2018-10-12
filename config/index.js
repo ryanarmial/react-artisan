@@ -2,7 +2,7 @@ const fs = require('fs')
 const Component = require('./component')
 let fileConfig; 
 try {
-  fileConfig = require(process.cwd()+'/ryan.config.js')
+  fileConfig = require(process.cwd()+'/ra.config.js')
 }
 catch(err){
   fileConfig = null

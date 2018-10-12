@@ -13,7 +13,7 @@ $ npm install -g react-artisan
 $ react-artisan COMMAND FILENANE [options]
 
 # e.g
-$ react-artisan create:component About --with-redux --function
+$ react-artisan create:component About --with-react-redux --functional
 ```
 
 ### List of Command
@@ -33,7 +33,7 @@ create:component
 
 ### Config File
 you can also create a config file to change default config.
-you can create file with name rean-config.js in project root folder
+you can create file with name ra-config.js in project root folder
 
 ### e.g
 ```javascript
