@@ -8,9 +8,6 @@ module.exports = function(type, filename, options) {
     switch (option) {
       case "--function":
       case "-f":
-        console.log('====================================');
-        console.log('masuk nich');
-        console.log('====================================');
         objOptions.classComponent = false
         break;
       case "--with-redux":
