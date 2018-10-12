@@ -14,12 +14,13 @@ const optionCommand = args.splice(2)
 const doing = command.split(':')[0]
 const type = command.split(':')[1]
 
-const checkDoing = commandList.doing.indexOf(doing)
-const checkType = commandList.type.indexOf(type)
+const checkCommand = commandList.hasOwnProperty(doing) ? 
+                      (commandList[doing].indexOf(type) > -1) : 
+                      false 
 
 if(doing == "help") {
   console.log(help)
-} else if (checkDoing < 0 || checkType < 0) {
+} else if (!checkCommand) {
   console.log(help)
   console.log('====================================');
   console.log('Unknown Command '+'"'+command+'"' );
