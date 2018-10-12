@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-const fs = require('fs');
 const path = require('path');
 const config = require(path.join(__dirname, '../config'))
 const commandList = require(path.join(__dirname, '../command'))

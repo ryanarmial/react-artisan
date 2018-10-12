@@ -9,9 +9,6 @@ class Component extends Config {
     this.withRedux = this.setDefault(options, 'withRedux', false)
     this.folderFile = this.setDefault(options, 'folderFile', false)
   }
-  setDefault(options, property, defaultValue){
-    return options.hasOwnProperty(property) ? options[property] : defaultValue
-  }
 }
 
 module.exports = Component

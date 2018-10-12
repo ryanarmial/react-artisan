@@ -27,6 +27,9 @@ module.exports = function(type, filename, options) {
       case "-f":
         objOptions.classComponent = false
         break;
+      case "--here":
+        objOptions.isHere = true
+        break;
       case "--with-redux":
         objOptions.withRedux = true
         break;
