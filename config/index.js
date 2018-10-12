@@ -1,10 +1,11 @@
 const fs = require('fs')
 const Component = require('./component')
+let fileConfig; 
 try {
-  var fileConfig = require(process.cwd()+'/ryan.config.js')
+  fileConfig = require(process.cwd()+'/ryan.config.js')
 }
 catch(err){
-  var fileConfig = null
+  fileConfig = null
 }
 
 module.exports = function(type, filename, options) {
@@ -23,15 +24,15 @@ module.exports = function(type, filename, options) {
 
   options.forEach(option => {
     switch (option) {
-      case "--function":
+      case "--functional":
       case "-f":
         objOptions.classComponent = false
         break;
       case "--here":
         objOptions.isHere = true
         break;
-      case "--with-redux":
-        objOptions.withRedux = true
+      case "--with-react-redux":
+        objOptions.withReactRedux = true
         break;
       case "--folder-file":
       case "-ff":

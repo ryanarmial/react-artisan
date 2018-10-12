@@ -6,7 +6,7 @@ class Component extends Config {
 
     this.rootPath = this.setDefault(options, 'rootPath', '/components'),
     this.classComponent =  this.setDefault(options, 'classComponent', true)
-    this.withRedux = this.setDefault(options, 'withRedux', false)
+    this.withReactRedux = this.setDefault(options, 'withReactRedux', false)
     this.folderFile = this.setDefault(options, 'folderFile', false)
   }
 }
