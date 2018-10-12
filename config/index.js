@@ -2,7 +2,8 @@ const Component = require('./component')
 
 module.exports = function(type, filename, options) {
   let objOptions = {
-    filename: filename
+    filename: filename,
+    type: type
   }
   options.forEach(option => {
     switch (option) {

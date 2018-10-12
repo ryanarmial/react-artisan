@@ -1,6 +1,7 @@
 class Config {
   constructor(options) {
-    this.filename = options.filename
+    this.filename = options.filename,
+    this.type = options.type
   }
 }
 

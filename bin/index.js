@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const config = require(path.join(__dirname, '../config'))
 const commandList = require(path.join(__dirname, '../command'))
-
+const generate = require(path.join(__dirname, '../lib'))
 
 const args = process.argv.splice(2)
 const command = args[0]
@@ -26,5 +26,5 @@ if (checkDoing < 0 || checkType < 0) {
   console.log('====================================');
 } else {
   const getConfig = config(type, filename, optionCommand)
-  console.log(getConfig)
+  generate(doing, getConfig);
 }
