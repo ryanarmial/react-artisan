@@ -1,7 +1,7 @@
 {
   "name": "react-artisan",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "React Artisan is a mini boilerplate for React",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,17 @@
   "bin": {
     "react-artisan": "bin/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ryanarmial/react-artisan.git"
+  },
+  "keywords": [
+    "react",
+    "cli",
+    "artisan"
+  ],
+  "homepage": "https://github.com/ryanarmial/react-artisan",
+  "author": "Ryan Akbar",
   "license": "ISC",
   "dependencies": {
     "mkdirp": "^0.5.1"
