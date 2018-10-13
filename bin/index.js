@@ -8,11 +8,12 @@ const help = fs.readFileSync(path.join(__dirname, '../sources/help.txt'), 'utf8'
 
 const args = process.argv.splice(2)
 const command = args[0]
-const filename = args[1]
-const optionCommand = args.splice(2)
-
 const doing = command.split(':')[0]
 const type = command.split(':')[1]
+
+const filename = doing != 'init' ? args[1] : null
+
+const optionCommand = args.filter(arg => arg[0] == '-');
 
 const checkCommand = commandList.hasOwnProperty(doing) ? 
                       (commandList[doing].indexOf(type) > -1) : 
