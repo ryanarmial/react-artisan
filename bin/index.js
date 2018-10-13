@@ -25,7 +25,7 @@ if(doing == "help") {
   console.log('====================================');
   console.log('Unknown Command '+'"'+command+'"' );
   console.log('====================================');
-} else if (!filename) {
+} else if (!filename && doing != 'init') {
   console.log('====================================');
   console.log('Filename must be exist' );
   console.log('====================================');

@@ -1,5 +1,6 @@
 const fs = require('fs')
-const Component = require('./component')
+const Component = require('./Component')
+const Redux = require('./Redux')
 let fileConfig; 
 try {
   fileConfig = require(process.cwd()+'/ra.config.js')
@@ -44,6 +45,8 @@ module.exports = function(type, filename, options) {
   switch (type) {
     case "component":
       return new Component(objOptions)
+    case "redux":
+      return new Redux(objOptions)
     default:
       return new Component(objOptions)
   }
