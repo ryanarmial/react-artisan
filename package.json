@@ -22,6 +22,8 @@
   "author": "Ryan Akbar",
   "license": "ISC",
   "dependencies": {
+    "execa": "^1.0.0",
+    "listr": "^0.14.2",
     "mkdirp": "^0.5.1"
   }
 }
